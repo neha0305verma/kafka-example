@@ -40,6 +40,16 @@ import org.apache.flink.streaming.util.serialization.SimpleStringSchema;
  *
  *
  */
+
+/**
+ * Kafka commands
+ * kafka-server-start /usr/local/etc/kafka/server.properties
+ * kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
+ * kafka-topics --list --bootstrap-server localhost:9092
+ * kafka-console-producer --broker-list localhost:9092 --topic test
+ * kafka-console-consumer --bootstrap-server localhost:9092 --topic test --from-beginning
+ */
+
 public class ReadFromKafka {
 
 	public static void main(String[] args) throws Exception {
